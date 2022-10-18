@@ -48,4 +48,15 @@ i = 0
 dict = {}
 
 while True:
-
+    i = int(input("Добро пожаловать! Введите команды от 1 до 5:\n1 - Добавить контакт\n2 - Удалить контакт\n3 - Просмотреть телефонную книгу\n4 - Изменить номер телефона\n5 - Завершить работу"))
+    if i == 1:
+        get_contact(dict, get_name(), get_num())
+    if i == 2:
+        remove_contact(dict, get_name())
+    if i == 3:
+        show_dict(dict)
+    if i == 4:
+        change_num(dict, get_name())
+    if i == 5:
+        print("Завершение работы...")
+        break
