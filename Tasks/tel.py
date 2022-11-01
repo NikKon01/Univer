@@ -24,7 +24,7 @@ def get_contact(dict, names, num):
     print("Контакт добавлен")
     return dict
 
-def remove_contact (dict, names)
+def remove_contact (dict, names):
     if not (names in dict):
         print("Нет такого номера!")
         return False
