@@ -1,4 +1,3 @@
-
 import random
 
 for p in range(2, 23):
