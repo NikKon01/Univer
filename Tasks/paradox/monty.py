@@ -1,7 +1,9 @@
 import random
 
-def montyh(nch, ch):
-    for i in range(100000):
+def montyh(iter = 10000):
+    nch = 0
+    ch = 0
+    for i in range(iter):
         a = [0, 0, 1]
         choice = random.randint(0, 2)
         a.pop(choice)
@@ -10,5 +12,4 @@ def montyh(nch, ch):
             nch += 1
         else:
             ch += 1
-    print(f'Вероятность если поменять выбор: {nch / 1000}%\nВероятность если не менять выбор: {ch / 1000}%')
-montyh(nch = 0, ch = 0)
+    return(f'Вероятность если поменять выбор: {nch / 1000}%\nВероятность если не менять выбор: {ch / 1000}%')
