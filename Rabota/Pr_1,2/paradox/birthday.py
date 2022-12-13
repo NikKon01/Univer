@@ -11,5 +11,4 @@ def birth(iter = 10000, c_ch = 23):
             if len(set_of_bdays) < len(birthday):
                 st += 1
     rez = st/10000
-    print(rez)
-
+    return(f"Парадокс дня рождения: {rez}")
