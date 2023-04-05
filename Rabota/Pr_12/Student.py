@@ -33,15 +33,20 @@ george = Student("George", 18, "11A")
 george.showInfo()
 print(" --------------- ")
 
-alexey = Student("Alexey", 17, "10B")
+alexey = Student()
+alexey.setNameAge("Alexey", 17)
+alexey.setGroupNumber("10B")
 alexey.showInfo()
 print(" --------------- ")
 
-ilya = Student("Ilya", 17, "10A")
+ilya = Student("Ilya", 17)
+ilya.setGroupNumber("10A")
 ilya.showInfo()
 print(" --------------- ")
 
-kirill = Student("Kirill", 18, "10B")
+kirill = Student()
+kirill.setNameAge("Kirill", 18)
+kirill.setGroupNumber("10B")
 kirill.showInfo()
 
 
